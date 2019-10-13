@@ -91,7 +91,7 @@ DATABASES = {
 import dj_database_url
 from decouple import config
 #conection to database
-DATABASES_HEROKU = {
+DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL') #DATABASE_URL is the default environement variable in Heroku!
     )
