@@ -35,6 +35,6 @@ urlpatterns = [
     url(r'apps/preprocessing.html', include("homepage.urls")),
     url(r'^apps/generative.html', include("homepage.urls")),
     url(r'^variational_autoencoder_tensorflow.html', include("homepage.urls")),	
-    url(r'^blogs/quantum_classifier.html', include("homepage.urls"))
+    url(r'^blogs/quantum_classifier.html', include("homepage.urls")),
 ] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
