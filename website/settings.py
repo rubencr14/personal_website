@@ -118,9 +118,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 #STATIC_ROOT = 'staticfiles'
-STATIFILES_DIRS = (os.path.join(BASE_DIR, 'static'))
+STATIFILES_DIRS = os.path.join(BASE_DIR, 'static')
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Now we set the media files where for instance csv files
 # will be saved
