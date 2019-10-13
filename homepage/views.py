@@ -1,12 +1,10 @@
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.template import RequestContext
-from matplotlib.backends.backend_agg import FigureCanvasAgg
 from django.core.files.storage import FileSystemStorage
 import os, io
 import pandas as pd
 from .forms import UploadFileForm, UploadImageForm, CreateDropMenuForPreprocessing, CreateDropMenuForGenerative
-import matplotlib.pyplot as plt
 from .Pipelines import preprocessing_pipeline
 from random import randint
 from django.views.generic import TemplateView
