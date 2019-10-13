@@ -115,8 +115,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+
+#STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_URL = '/static/'
+STATIC_ROOT = '/app/staticfiles/'
 #STATIC_ROOT = 'staticfiles'
 STATIFILES_DIRS = os.path.join(BASE_DIR, 'static')
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
