@@ -23,7 +23,6 @@ django-tables2-bootstrap4==2.0.0b5
 entrypoints==0.3
 enum34==1.1.6
 future==0.17.1
-futures==3.2.0
 gudhi==2.3.0
 gunicorn==19.9.0
 h5py==2.9.0
