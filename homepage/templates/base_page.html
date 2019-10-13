@@ -8,14 +8,14 @@
 	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 <!--<a href="{% url 'login' %}">login</a>-->
-	<ul class="sidebar">
+	<!--<ul class="sidebar">
    {% if user.is_authenticated %}
      <li>User: {{ user.get_username }}</li>
      <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
    {% else %}
      <li><a href="{% url 'login'%}?next={{request.path}}" class="login_button">Login</a></li>
    {% endif %}
-  </ul>
+  </ul>-->
 </head>
 <body>
 
@@ -37,7 +37,7 @@
 					</ul>-->
 				</li>
 				<!--{% endif %}-->
-				{% if user.is_authenticated %}
+				<!--{% if user.is_authenticated %}-->
 				<!--<li><a href='^line_chart'>Apps</a>-->
 					<li><a id="apps_button" href='apps.html'>Apps</a>
 					<!--<ul class="apps_submenu">
@@ -46,7 +46,7 @@
 
 					</ul>-->
 			</li>
-				{% endif %}
+				<!--{% endif %}-->
 				<li><a id="blogs_button" href="blogs.html">Blogs</a></li>
 				<li><a id="about_button" href="about_me.html">About me</a></li>
 				<li><a id="contact_button" href="contact.html">Contact</a></li>
