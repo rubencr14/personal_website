@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 import dj_database_url
 from decouple import config
 #conection to database
-DATABASE = {
+DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL') #DATABASE_URL is the default environement variable in Heroku!
     )
