@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-import seaborn as sns
 import pickle, os
 #import Configuration as C
 from sklearn.base import BaseEstimator, TransformerMixin
