@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -34,5 +36,5 @@ urlpatterns = [
     url(r'^apps/generative.html', include("homepage.urls")),
     url(r'^variational_autoencoder_tensorflow.html', include("homepage.urls")),	
     url(r'^blogs/quantum_classifier.html', include("homepage.urls"))
-]
+] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
