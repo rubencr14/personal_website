@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%s=98=ck4_80k5!r2*ye17-sw)ant7+=#ngd2-(1(c7rt+pmqg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 #True for debuggin!
 
 ALLOWED_HOSTS = ["*"] #* means all hosts!
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -97,7 +97,7 @@ DATABASES = {
     )
 
 }
-
+"""
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
@@ -118,9 +118,11 @@ USE_TZ = True
 
 #STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
+#STATIC_ROOT = 'static' #for heroku
+#STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 #STATIC_ROOT = 'staticfiles'
-STATIFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+#STATIFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

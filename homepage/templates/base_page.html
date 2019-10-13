@@ -8,14 +8,7 @@
 	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 <!--<a href="{% url 'login' %}">login</a>-->
-	<!--<ul class="sidebar">
-   {% if user.is_authenticated %}
-     <li>User: {{ user.get_username }}</li>
-     <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
-   {% else %}
-     <li><a href="{% url 'login'%}?next={{request.path}}" class="login_button">Login</a></li>
-   {% endif %}
-  </ul>-->
+
 </head>
 <body>
 
@@ -27,26 +20,26 @@
 		<nav class="navegacion">
 
 			<ul class="menu">
-				<li><a id ="home_button" href="index.html">Home</a></li>
-				<!--{% if user.is_authenticated %}-->
-				<li><a id="tutorials_button" href="tutorials.html">Tutorials</a></li>
+				<li><a id ="home_button" href="index.html">Home<a></li>
+
+				<li><a id="tutorials_button" href="tutorials.html">Tutorials</a>
 					<!--<ul class="submenu">
 						<li><a href="https://github.com/rubencr14/ML_models/blob/master/variational_autoencoder_tensorflow.ipynb">Variational autoencoder</a></li>
 						<li><a href="https://github.com/rubencr14/ML_models/blob/master/Pix2Pix.ipynb">Pix2Pix</a></li>
 						<li><a href="https://github.com/rubencr14/ML_models/blob/master/gan_pytorch.ipynb">GAN</a></li>
 					</ul>-->
-				
-				<!--{% endif %}-->
-				<!--{% if user.is_authenticated %}-->
+				</li>
+
+		
 				<!--<li><a href='^line_chart'>Apps</a>-->
-					<li><a id="apps_button" href='apps.html'>Apps</a></li>
+					<li><a id="apps_button" href='apps.html'>Apps</a>
 					<!--<ul class="apps_submenu">
 						<li><a href="preprocessing.html">ML preprocessing</a></li>
 
 
 					</ul>-->
-			
-				<!--{% endif %}-->
+			</li>
+
 				<li><a id="blogs_button" href="blogs.html">Blogs</a></li>
 				<li><a id="about_button" href="about_me.html">About me</a></li>
 				<li><a id="contact_button" href="contact.html">Contact</a></li>
