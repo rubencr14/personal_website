@@ -1,0 +1,84 @@
+{% include "base_page.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+	<div class="content">
+			{% block content %}
+	<h1> “Is artificial intelligence less than our intelligence?” </h1>
+        <h2>Rubén Cañadas Rodríguez</h2>
+        <div class="my" style="display:inline-block; background: white; background-image: url('{% static 'images/myself.png'%}'); background-size: 120px 100px; background-repeat: no-repeat; width: 700px; height: 530px; margin-left:50px;border-radius: 20px; border-style: solid; background-position: 300px 380px; box-shadow: 2px -2px 2px">
+                <p style="font-size:40px; color:black; font-weight: bold; margin: 30px; margin-left:250px">Myself</p>
+                <p style="margin: 20px; font-size:20px;line-height:1.5"> I am a very curious and highly motivated person with special interest in science. I am 
+                    always learning new things overall about math, physics and computer science. Apart from science I also love
+                    travelling around the world. I have been in several countries such as Thailand, India, Nepal or Costa Rica as a backpacker
+                    I find it amazing to discover new cultures, their gastronomy and customs. It is very inspiring when you are up in the Himalayas
+                    observing the highest mountains in the world or in the middle of the jungle listening to all kinds of animals. It is really
+                    relaxing and inspiring. When I come back I always feel full of energy to start new projects. 
+                
+            </p></div>
+            <div class="stud" style="display:inline-block; background: white; background-image: url('{% static 'images/study.svg'%}'); background-size: 140px 120px; background-repeat: no-repeat; width: 700px; height: 400px; margin-left:500px; margin-top: 70px; border-radius: 20px; border-style: solid; background-position: 300px 250px; box-shadow: 2px -2px 2px">
+                    <p style="font-size:40px; color:black; font-weight: bold; margin: 30px; margin-left:250px">Studies</p>
+                    <!--<p style="margin: 20px; font-size:20px">-->
+                    <ul style="margin: 30px; font-size:20px;line-height:1.5">
+                        <li>Bachelor of Science - BS, <strong> <a target="_blank" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" href="http://www.ub.edu/biologia/guia_grau_bioquimica/assignatures.html" style="color:black; text-decoration: none">Biochemistry</a></strong> (2013-2017)</li>
+                        <li>Master of Science - MS, <strong> <a target="_blank" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" href="https://tccm.qui.uam.es/?page_id=1419" style="color:black; text-decoration: none">Theoretical chemistry and computational modelling</a></strong>  (2017-2019)</li>
+                        <li>Bachelor of Science - BS, <strong> 
+                            <a target="_blank" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';"  href="http://portal.uned.es/portal/page?_pageid=93,69881620&_dad=portal&_schema=PORTAL&idGrado=6102" style="color:black; text-decoration: none"> Mathematics </a></strong>(2017-present)</li>
+
+                    </ul>
+                </div>
+                <div class="proj" style="display:inline-block; background: white; background-image: url('{% static 'images/project.png'%}'); background-size: 120px 100px;background-repeat: no-repeat; width: 700px; height: 900px; margin-left:50px; margin-top: 80px; border-radius: 20px; border-style: solid; background-position: 300px 750px; box-shadow: 2px -2px 2px">
+                        <p style="font-size:40px; color:black; font-weight: bold; margin: 30px; margin-left:250px">Projects</p>
+                        <p style="margin: 20px; font-size:20px; "> 
+                            <ul style="margin: 30px; font-size:20px;line-height:1.5; text-align: justify">
+                                <li><strong>A machine learning-based scoring function for drug design:</strong> The aim of this project was to create
+                                a machine learning model for finding novel drugs for skin-related decesases in collaboration with the pharma.
+                                 Methods: Neural networks, support vector machines, random forests, gradient boosting and topological data analysis.
+                                Tools: Scikit-learn, Tensoflow, Pandas, Keras, XGboost.</li>
+                                <br>
+                                <li><strong>Enzyme promiscuity and activity using artificial intelligence:</strong> 
+                                The aim of this project was to build two different type of models. The first model was to predict the 
+                                how promiscous is an esterase (a type of enzyme) using a dataset given by an experimental group. The second
+                                model was about the activity of esterases. These models were constructed performing random and grid search
+                                over different feature engineering, hyperparameters and machine learning methods pipelines. The pipeline
+                                with the best cross-validation values were used for testing. 
+                                Methods: Neural networks, support vector machines, random forests, gradient boosting, algebraic topology and
+                                Monte-Carlo sampling. 
+                                Tools: Scikit-learn, Tensoflow, Pandas, Keras, XGboost, Gromacs, Glide.
+                                </li><br>
+                                <li><strong>Computational rational design of an ester hydrolase</strong></li>
+
+                            </ul>
+                    </p></div>
+                    <div class="pub" style="display:inline-block; background: white; background-image: url('{% static 'images/paper.png'%}'); background-size: 120px 100px; background-repeat: no-repeat; width: 700px; height: 350px; margin-left:500px; margin-top: 90px; border-radius: 20px; margin-bottom: 40px; border-style: solid; background-position: 300px 200px; box-shadow: 2px -2px 2px">
+                        <p style="font-size:40px; color:black; font-weight: bold; margin: 30px; margin-left:250px">Publications</p>
+                        <p style="margin: 20px; font-size:20px"> 
+                            <ul style="margin: 30px; font-size:20px;line-height:1.5">
+                                <li><a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://www.sciencedirect.com/science/article/pii/S014181301935319X" style="color:black; text-decoration: none"><strong>Structural and biochemical insights into an engineered high-redox potential laccase overproduced in Aspergillus</strong></a></li>
+
+                            </ul>
+                    </p></div>
+
+
+
+
+        <!----
+        <div style="color:black; margin-top: 100px; margin-right: 10px; margin-left: 10px; font-size:50px; text-align: right">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci erat, dictum sit amet semper sed, malesuada et sem. Sed nibh neque, maximus eu dapibus ac, suscipit eu leo. Quisque auctor, dui molestie dictum faucibus, erat sem mollis neque, laoreet tempor nulla lectus vel nulla. Vestibulum facilisis augue at felis aliquam scelerisque. Etiam bibendum varius massa vel mollis. Donec ullamcorper rhoncus lobortis. Etiam dapibus, diam a mattis aliquam, ligula risus eleifend purus, a gravida augue dui vitae urna. Maecenas volutpat tellus tortor, vitae condimentum massa congue nec. Morbi placerat blandit diam sit amet semper. Aliquam eget turpis varius, tempus justo vitae, ultrices arcu. Nam tristique risus scelerisque sem lacinia vestibulum. Integer egestas ipsum quam, a rutrum nunc convallis rutrum. </p>
+            </div>-->
+</div>
+<!--<div class="lema"><p>Read, Learn and Code!</p></div>-->
+{% endblock %}
+</body>
+<script>
+	document.getElementById("about_button").style.color = "orange";
+</script>
+<style>
+    div.proj{transition: .4s}
+    div.proj:hover{transform: scale(1.15); z-index: 10;}
+    div.my{transition: .4s}
+    div.my:hover{transform: scale(1.15); z-index: 10;}
+    div.stud{transition: .4s}
+    div.stud:hover{transform: scale(1.15); z-index: 10;}
+    div.pub{transition: .4s}
+    div.pub:hover{transform: scale(1.15)}
+</style>

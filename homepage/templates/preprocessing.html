@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/preprocessing_style.css' %}">
+<form method="post" enctype="multipart/form-data" class="input_csv" lang="eng">
+	{% csrf_token %}
+    <input type="file" name="csv">
+    <button type="submit" class="submit_button">Upload csv</button>
+
+</form>
+
+
+</head>
+<body>
+
+</body>

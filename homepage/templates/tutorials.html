@@ -1,0 +1,151 @@
+{% include "base_page.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+	<div class="content">
+			{% block content %}
+	<h1> “Is artificial intelligence less than our intelligence?” </h1>
+        <h2>Rubén Cañadas Rodríguez</h2>
+        <div style="font-size:50px; font-weight: bold; text-align: center; margin: 30px; margin-top: 50px; margin-bottom: 50px; text-shadow: 1px 1px 1px #919191,
+        1px 8px 1px #919191,
+        1px 8px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);">GENERATIVE MODELS</div>
+
+        <script type="text/javascript">
+            function NotImplemented()
+                {alert("Tutorial under construction \nTutorial release: 15-10-2019" )};
+        </script>
+        <div  class="vae" style="overflow: auto; display:inline-block; background: white; background-image: url('{% static 'images/autoencoder.png'%}'); background-size: 300px 100px; background-repeat: no-repeat; width: 300px; height: 300px; position: relative; margin: 20px; margin-left: 140px; border-radius: 50px; border-style: solid; background-position: 5px 180px; box-shadow: 2px -2px 2px;">
+                <p href="#" style="text-decoration: none; color:black; margin: -10px; margin-bottom: -5px; margin-left: 80px; font-weight: bold; font-size:15px; margin-top:10px">Variational Autoencoder</p><br>
+                <p style="font-size: 15px; margin: 10px; margin-top: 0px">This tutorial explains a very particular generative method called variational autoencoder. It uses a encoder-decoder architecture in order to find a continous representation of the distribution so as to create de novo properties</p>
+                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/variational_autoencoder_tensorflow.ipynb"style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px; ">Code</a>
+            </div>
+            <div class="pix" style="overflow: auto;display:inline-block; background: white; background-image: url('{% static 'images/pix2pix.jpg'%}'); background-size: 250px 110px; background-repeat: no-repeat; width: 300px; height: 300px; position: relative; margin: 20px; border-radius: 50px; border-style: solid; background-position: 20px 170px; box-shadow: 2px -2px 2px">
+                <p href="#" style="text-decoration: none; color:black;  margin: -10px; margin-bottom: -15px; margin-left: 120px;font-weight: bold; font-size:15px; margin-top:10px">Pix2Pix</p><br>
+                <p style="font-size: 15px; margin: 10px;">
+                    This tutorial explains a particular case of conditional adversarial networks in which image-to-image
+                    translation problems are solved through a particular mapping from an input image to an output image
+                    </p>
+                
+                <a onclick='NotImplemented()' target="_blank" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" style="text-decoration: none;  margin-left: 120px; color:black; font-weight: bold; font-size: 20px;">Code</a>
+            </div>
+            <div class="gan" style="overflow: auto;display:inline-block; background: white; background-image: url('{% static 'images/gan.jpeg'%}'); background-size: 250px 110px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 20px; border-radius: 50px; border-style: solid; background-position: 20px 170px; box-shadow: 2px -2px 2px;">
+                <p href="#" style="text-decoration: none; color:black; margin: -10px; margin-bottom: -15px; margin-left: 120px; font-weight: bold; font-size:15px; margin-top:10px">GAN</p><br>
+                <p style="font-size: 15px; margin: 10px;">This tutorial explains a famous generative model architecture named
+                generative adversarial networks in which two artificial intelligences fight in order to obtain
+                a reliable generative model</p>
+                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/gan.ipynb?flush_cache=true"style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+            </div>
+            <div class="lstm" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/lstm.jpg'%}'); background-size: 250px 110px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 40px; border-radius: 50px; border-style: solid; background-position: 20px 170px; margin-left:135px; margin-top:0px; box-shadow: 2px -2px 2px;">
+                <p href="" style="text-decoration: none; color:black; margin: 0px; margin-bottom: -15px; margin-left: 140px; font-weight: bold; font-size:15px; margin-top:10px">LSTM</p><br>
+                <p style="font-size: 15px; margin: 10px;">
+                This tutorial explains the basics of LSTMs, a particular type of recurrent neural networks designed to
+                work with long-term dependencies problems, for which recurrent neural networks fail. An example of how to use it
+                with text generation problems is given.
+                </p>
+                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/LSTM_quote.ipynb"style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+            </div>
+            <div class="auto" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/auto.png'%}'); background-size: 250px 110px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 40px; border-radius: 50px; border-style: solid; background-position: 30px 170px; margin-left:10px; margin-top:0px; box-shadow: 2px -2px 2px;">
+                <p href="#" style="text-decoration: none; color:black; margin: 0px; margin-bottom: -15px; margin-left: 140px; font-weight: bold; font-size:15px; margin-top:10px; margin-left: 80px">Vanilla Autoencoder</p><br>
+                <p style="font-size: 15px; margin: 10px;">This generative unsupervised method uses a encoder architecture
+                    in order to give a representation of the incoming object but in a lower dimensional space. This way it allows
+                    to compress information. Then a decoder is used so as to reconstruct the object from the low dimensional representation.
+                </p>
+                <a  onclick='NotImplemented()'  onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" target="_blank" style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+            </div>
+            <div class="style" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/style_gan.jpg'%}'); background-size: 250px 110px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 40px; border-radius: 50px; border-style: solid; background-position: 20px 170px; margin-left:10px; margin-top:0px; box-shadow: 2px -2px 2px;">
+                <p href="#" style="text-decoration: none; color:black; margin: 0px; margin-bottom: -15px;  font-weight: bold; font-size:15px; margin-top:10px; margin-left: 115px; ">Style GAN</p><br>
+                <p style="font-size: 15px; margin: 10px;">
+                        Style Transfer Generative Adversarial Networks take two images and apply the style from one image to the other image using two datasets of two styles 
+                        with different images in each dataset. 
+                </p>
+                <a onclick='NotImplemented()'  onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" target="_blank" style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+            </div>
+
+</div>
+<!--  BIG DATA SECTION-->
+
+<div style="font-size:50px; font-weight: bold; text-align: center; margin: 30px; margin-top: 0px; margin-bottom: 50px; text-shadow: 1px 1px 1px #919191,
+        1px 8px 1px #919191,
+        1px 8px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);">BIG DATA</div>
+<div>
+        <div  class="hadoop" style="overflow: auto; display:inline-block; background: white; background-image: url('{% static 'images/hadoop.png'%}'); background-size: 200px 110px; background-repeat: no-repeat; width: 300px; height: 300px; position: relative; margin: 20px; margin-left: 140px; border-radius: 50px; border-style: solid; background-position: 40px 190px; box-shadow: 2px -2px 2px;">
+            <p href="#" style="text-decoration: none; color:black; margin: -10px; margin-bottom: -5px; margin-left: 80px; font-weight: bold; font-size:15px; margin-top:10px">Introduction to Hadoop</p><br>
+            <p style="font-size: 15px; margin: 10px; margin-top: 0px; text-align: justify">Hadoop allows to store huge datasets in a distributed way under the Hadoop Distributed FileSystem (HDFS).
+                    It is fault tolerant, highly scalable and allows to perform operations on big amounts of data very fast. 
+                    In this tutorial we will review the most important aspects of Hadoop and see how operations can be one using the 
+                    MapReduce paradigm.
+            </p>
+            <a onclick="NotImplemented()"  onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" target="_blank" style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px; ">Code</a>
+        </div>
+        <div class="spark" style="overflow: auto;display:inline-block; background: white; background-image: url('{% static 'images/spark.png'%}'); background-size: 200px 50px; background-repeat: no-repeat; width: 300px; height: 300px; position: relative; margin: 20px; border-radius: 50px; border-style: solid; background-position: 50px 180px; box-shadow: 2px -2px 2px">
+            <p href="#" style="text-decoration: none; color:black;  margin: -10px; margin-bottom: -15px; margin-left: 80px;font-weight: bold; font-size:15px; margin-top:10px">Introduction to Spark</p><br>
+            <p style="font-size: 15px; margin: 10px; text-align: justify">
+                Spark is an open-source big data framework that allows to manage big volumes of data in a very optimal way.
+                This tutorial introduces the basic concepts Spark giving some examples on how to use it to retrieve data from a large
+                dataset. 
+                </p>
+            
+            <a target="_blank" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/Intro_to_Spark.ipynb?flush_cache=true" style="text-decoration: none;  margin-left: 120px; color:black; font-weight: bold; font-size: 20px;">Code</a>
+        </div>
+        <div class="hive" style="overflow: auto;display:inline-block; background: white; background-image: url('{% static 'images/hive.png'%}'); background-size: 200px 80px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 20px; border-radius: 50px; border-style: solid; background-position: 50px 170px; box-shadow: 2px -2px 2px;">
+            <p href="#" style="text-decoration: none; color:black; margin: -10px; margin-bottom: -15px; margin-left: 80px; font-weight: bold; font-size:15px; margin-top:10px">Introduction to Hive</p><br>
+            <p style="font-size: 15px; margin: 10px; text-align: justify ">This tutorial explains a famous generative model architecture named
+            generative adversarial networks in which two artificial intelligences fight in order to obtain
+            a reliable generative model</p>
+            <a onclick="NotImplemented()" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" target="_blank" style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+        </div>
+
+</div>
+
+
+
+
+<!--Defining a zoom in when the user hovers over the models (position: relative is needed)!-->
+<style>
+    div.vae{transition: .4s}
+    div.pix{transition: .4s}
+    div.gan{transition: .4s}
+    div.lstm{transition: .4s}
+    div.auto{transition: .4s}
+    div.style{transition: .4s}
+    div.hadoop{transition: .4s}
+    div.spark{transition: .4s}
+    div.hive{transition: .4s}
+    
+    div.vae:hover{transform: scale(1.5); z-index: 10;}
+    div.pix:hover{transform: scale(1.5); z-index: 10;}
+    div.gan:hover{transform: scale(1.5); z-index: 10;}
+    div.lstm:hover{transform: scale(1.5); z-index: 10;}
+    div.auto:hover{transform: scale(1.5); z-index: 10;}
+    div.style:hover{transform: scale(1.5); z-index: 10;}
+    div.hadoop:hover{transform: scale(1.5); z-index: 10;}
+    div.spark:hover{transform: scale(1.5); z-index: 10;}
+    div.hive:hover{transform: scale(1.5); z-index: 10;}
+</style>
+{% endblock %}
+</body>
+<!--using javascript to highlight in orange this section-->
+<script>
+	document.getElementById("tutorials_button").style.color = "orange";
+</script>

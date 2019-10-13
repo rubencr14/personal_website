@@ -1,0 +1,161 @@
+{% load staticfiles %}
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script> <!--For adding equations!-->
+<body style="background: #313D52">
+
+        <div id="block" style="display:inline-block; background:white; background-repeat: no-repeat; width: 1000px; height: 4000px; margin-left:140px;border-radius: 20px; border-style: solid; ; box-shadow: 2px -2px 2px">
+        <h1 style="text-align: center; font-size:60px; text-shadow: 1px 1px 1px #919191,
+        1px 8px 1px #919191,
+        1px 8px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);">Quantum Classifier</h1>
+
+    <h2 style="font-size:20px; margin-left:100px; margin-top: 80px">Historical Background</h2>
+    <p style="margin: 20px; margin-left: 100px; margin-top: 20px; margin-right: 100px; text-align: justify; font-size: 20px">
+
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, vitae cubilia nisl dignissim habitasse risus accumsan vehicula, venenatis nunc volutpat semper aenean sed. Mollis eu dictumst ridiculus pretium in sem pulvinar, suscipit faucibus fermentum himenaeos sapien quis tellus hendrerit, iaculis nunc lobortis magna ullamcorper platea. Tempor aptent sagittis cubilia et natoque montes porttitor accumsan, lobortis posuere tortor felis lacus curabitur leo nullam, odio convallis dictumst ac tincidunt vulputate risus.
+        </p><h3 style="font-size:20px; margin-left:100px; margin-top: 50px">Concept</h3>
+    <p style="margin: 10px; margin-left: 100px; margin-top: 0px; margin-right: 100px; text-align: justify; font-size: 20px">
+            Malesuada convallis interdum facilisis molestie metus facilisi lobortis eleifend venenatis, congue placerat luctus maecenas eu litora nostra porta eros ut, euismod vestibulum cursus sapien condimentum dignissim himenaeos proin. Augue dictumst justo vel habitasse leo curae facilisi in dui auctor faucibus sociis, suscipit ullamcorper gravida montes dapibus conubia magna interdum vehicula torquent malesuada. Varius dictum fringilla nec odio arcu eleifend metus himenaeos blandit ridiculus, habitasse justo nostra ad mollis pretium sodales placerat.
+
+            $$ {J(\theta) =\frac{1}{2m} [\sum^m_{i=1}(h_\theta(x^{(i)}) - y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j} $$  <!--For adding equations!-->
+        </p><h4 style="font-size:20px; margin-left:100px; margin-top: 50px">Applications</h4>
+        <p style="margin: 10px; margin-left: 100px; margin-top: 0px; margin-right: 100px; text-align: justify; font-size: 20px">
+            Aliquet molestie odio lobortis sociis facilisis cursus venenatis habitant cras, interdum dui diam sodales fames varius ante magnis velit, iaculis leo orci congue lectus nisl pharetra id. Nibh malesuada a viverra tristique nostra aptent, dapibus curae netus vulputate lacus blandit enim, ultrices praesent cum varius eget. Tincidunt cubilia sagittis dictum inceptos ullamcorper mollis fusce, nunc nascetur urna facilisis leo est porttitor, nullam suspendisse taciti tristique cum nibh.
+
+            Se cree ampliamente que la historia de Lorem Ipsum se origina con Cicerón en el siglo I aC y su texto De Finibus bonorum et malorum. Esta obra filosófica, también conocida como En los extremos del bien y del mal, se dividió en cinco libros. El Lorem Ipsum que conocemos hoy se deriva de partes del primer libro Liber Primus y su discusión sobre el hedonismo, cuyas palabras habían sido alteradas, añadidas y eliminadas para convertirlas en un latín sin sentido e impropio. No se sabe exactamente cuándo el texto recibió su forma tradicional actual. Sin embargo, las referencias a la frase "Lorem Ipsum" se pueden encontrar en la Edición de la Biblioteca Clásica Loeb de 1914 del De Finibus en las secciones 32 y 33. Fue en esta edición del De Finibus en la que H. Rackman tradujo el texto. El siguiente fragmento se selecciona de la sección 32:
+    </p>
+
+    <img src="{% static 'images/blogs/qm_clf.png' %}" alt="Italian Trulli" style="margin-left: 300px; margin-top: 60px; height: 250px;width: 500px; text-align: justify">
+<h3 style="font-size:20px; margin-left:100px; margin-top: 50px">Methodology</h3>
+<p style="margin: 10px; margin-left: 100px; margin-top: 0px; margin-right: 100px; text-align: justify; font-size: 20px">
+        A convallis euismod primis cubilia tempor sed, vestibulum leo curae feugiat dapibus, in congue aliquam parturient erat. Nostra sociis sodales feugiat pretium etiam commodo eget porta, volutpat blandit consequat dictum scelerisque mauris sociosqu. Neque nulla luctus dictum aenean integer pulvinar massa ac ullamcorper blandit purus eu semper mollis, potenti dignissim nunc litora quam accumsan gravida cursus justo venenatis laoreet egestas tempor. Habitant tempus mus maecenas placerat nisl urna dapibus, nullam aliquam pretium odio dignissim parturient cubilia, ultricies consequat leo ad enim fermentum.
+
+        Nam nascetur mus taciti facilisis phasellus inceptos a litora, quam suspendisse metus arcu nisl mi tellus. Natoque ornare himenaeos sed felis placerat praesent accumsan magna nisi, dictumst odio consequat mauris a egestas dictum nunc, condimentum laoreet nibh justo porttitor mus ullamcorper conubia. Per quis velit mauris nascetur magna blandit cras urna gravida, vel quam est molestie congue non cursus tristique dapibus lacus, eu commodo dui orci mus libero erat praesent.
+       </p> 
+       <h3 style="font-size:20px; margin-left:100px; margin-top: 50px">Code</h3>
+       <div id="block" style=" margin:10px; display:inline-block; background:rgb(184, 182, 182); background-repeat: no-repeat; width: 800px; height: 1700px; margin-left:100px;border-radius: 20px; border-style: solid; ; box-shadow: 2px -2px 2px">
+       <p style="margin-left:350px; font-weight: bold">PYTHON</p>
+        <xmp style="margin-left:-80px; margin-top: 40px">
+            import tensorflow as tf
+            import os
+            import matplotlib.pyplot as plt
+            import numpy as np
+            
+            
+            class ImageTools(object):
+            
+                def __init__(self, images):
+                    self.__images = images #List with pair of images 
+                    #[input_image, target_image] (it can have more images)
+            
+                def __str__(self):
+                    return "Images object of length {}".format(len(self.__images))
+                
+                def __len__(self):
+                    return len(self.__images)
+            
+                def normalize(self):
+                    """ This function normalizes the images of rank (0,255) to (-1, 1)"""
+                    
+                    normalized_images = []
+                    for image in self.__images:
+                            normalized_images.append((image / 127.5)-1)
+                    return normalized_images
+                    class NetworkUtilities(object):
+    
+                    def __init__(self, LAMBDA=100):
+                        
+                        self.__LAMBDA = LAMBDA
+                    
+                    def _encoder(self, filters, apply_batchnorm=True): #encoder
+                    
+                        encoder_block = Sequential()
+                        initializer = tf.random_normal_initializer(0, 0.02)
+                
+                        #Convolutional layer, use bias as long as we are not applying batch 
+                        #normalization since batch normalization add
+                        # a bias by default!!
+                        encoder_block.add(Conv2D(filters, kernel_size=4, strides=2, padding="same", 
+                                                    kernel_initializer=initializer, 
+                                                                use_bias=not apply_batchnorm))
+                
+                        #Batch Normalization
+                        if apply_batchnorm:
+                            encoder_block.add(batchNormalization())
+                        encoder_block.add(LeakyReLu)
+                
+                        return encoder_block
+                
+                    
+                def _decoder(self, filters, apply_dropout=False): #Decoder
+                
+                    decoder_block = Sequential()
+            
+                    initializer = tf.random_normal_initializer(0, 0.02)
+            
+                    #Convolutional layer, use bias as long as we are not applying batch 
+                    #normalization since batch normalization add
+                    # a bias by default!!
+                    decoder_block.add(Conv2DTranspose(filters, kernel_size=4, strides=2, padding="same",
+                                                         kernel_initializer=initializer, use_bias=False))
+            
+                    #Batch Normalization
+                    decoder_block.add(batchNormalization())
+            
+                    #Dropout later (regulariazation technique)
+                    if apply_dropout:
+                        decoder_block.add(Dropout(0.5))
+            
+                    #Activation layer
+                    decoder_block.add(ReLu) #Relu as specified in the paper
+            
+                    return decoder_block
+                
+                @property
+                def loss_object(self):
+                    
+                    return tf.keras.losses.BinaryCrossentropy(from_logits=True) #From_logits=True we pass 
+                    #the images thru sigmoid function
+            
+                
+                def _generator_loss(self, disc_generated_output, gen_output, target):
+                
+                    gan_loss = self.loss_object(tf.ones(disc_generated_output), disc_generated_output)
+                    l1_loss = tf.reduce_mean(tf.abs(target - gen_output))
+                    total_gen_loss = gan_loss + (self.__LAMBDA * l1_loss)
+                    
+                    return total_gen_loss
+                
+                def _discriminator_loss(self, disc_real_output, disc_generated_output):
+            
+                    real_loss = self.loss_object(tf.ones(disc_real_output), disc_real_output) 
+                    #The Ones matrix mean that they are real!
+                    generated_loss = self.loss_object(tf.zeros_like(disc_generated_output),
+                                                         disc_generated_output) #Zeros means false
+                    total_disc_loss = real_loss + generated_loss
+            
+                    return total_disc_loss
+                
+                @property
+                def _optimizer(self):
+                    
+                    return tf.keras.optimizers.Adam(2e-4, beta_1=0.5)
+         </xmp>
+        </div> <!--div of coding block!-->
+        <h3 style="font-size:20px; margin-left:100px; margin-top: 50px">Conclusions</h3>
+<p style="margin: 10px; margin-left: 100px; margin-top: 0px; margin-right: 100px; text-align: justify; font-size: 20px">
+        Vitae suspendisse praesent nibh hendrerit ante risus, pharetra natoque dis diam mattis ut cras, vulputate euismod commodo rutrum nulla. Eleifend iaculis libero rutrum lectus ultricies in dui, nostra fringilla convallis dictumst netus rhoncus nec sem, nisl inceptos semper natoque sagittis quis. Eget dis potenti hac at tempus elementum primis iaculis, proin ultrices netus mollis erat nisi arcu, pharetra fames facilisi sociis curae sagittis sed. Mus vulputate arcu tellus sollicitudin velit class, rhoncus praesent aptent sapien penatibus vitae, sem iaculis eros blandit est.
+
+        Posuere euismod magna per viverra convallis pretium sollicitudin, id malesuada phasellus orci justo hac taciti nam, habitant sodales non nascetur tincidunt habitasse. Lacus et consequat erat eleifend est at placerat massa litora sociis faucibus, arcu diam fames non condimentum ultrices ac elementum tempus viverra quam, nostra porttitor rhoncus a risus platea magnis natoque vulputate vel. Tristique massa cras commodo urna dignissim senectus proin diam, posuere in volutpat ac metus facilisi porta tempus, sociosqu parturient nunc sodales euismod ornare auctor.
+    
+    </p>
+    </div></body>

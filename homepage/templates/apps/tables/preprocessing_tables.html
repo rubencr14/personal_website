@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/w/dt/jq-3.3.1/dt-1.10.18/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/w/dt/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
+
+<body style="background: #313D52">
+<div id="block" style="display:inline-block; background: white; background-repeat: no-repeat; width: 1000px; height: 400px; margin-left:140px;border-radius: 20px; border-style: solid; ; box-shadow: 2px -2px 2px">
+        
+        <input type="file" id="fileUpload" />
+        <input type="button" id="upload" value="Upload" onclick="Upload()" />
+        <div id="example"></div>
+        <table id="dvCSV"></table>
+       <!-- <table id="polla">
+                <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                </tbody>
+        </table>-->
+        <script type="text/javascript" src='{% static "js/load_csv.js"%}'> </script>
+        <hr />
+
+</div>
+</body>
+<!--<script type="text/javascript" src='{% static "js/load_csv.js"%}'>
+</script>-->

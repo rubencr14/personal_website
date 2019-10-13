@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #F5F5DC;
+}
+
+.title{
+   color: #000000;
+   font-size: 60px;
+   margin: 30px auto;
+   font-weight:bold;
+
+}
+
+.contact_text{
+
+    font-size: 30px;
+    position: relative;
+    left: 60px;
+
+
+}

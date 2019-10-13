@@ -1,0 +1,57 @@
+{% load staticfiles %}
+<body style="background: #313D52">
+
+        <div id="block" style="display:inline-block; background: rgb(224, 226, 121); background-repeat: no-repeat; width: 1000px; height: 500px; margin-left:140px;border-radius: 20px; border-style: solid; ; box-shadow: 2px -2px 2px">
+        <h1 style="text-align: center; font-size:50px; text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);">Data Preprocessing</h1>
+
+<p style="margin:20px; margin-left: 100px; margin-right: 100px; margin-top:50px; text-align:justify; font-size: 25px">
+
+    This app analizes and cleans dataset as a first step before performing machine learning. Data preprocessing is 
+    very importan since most of the datasets in the world are dirty, having null values, categorical data or outliers.
+    Cleaning all this makes data much more reliable and thus, better models will be created employing machine learning 
+    and deep learning methodologies. Also, the dataset is splitted into train and test sets.
+</p></div>
+
+<div id="block" style="display:inline-block; background: rgb(155, 94, 94); background-repeat: no-repeat; width: 1000px; height: 300px; margin-left:140px;border-radius: 20px; border-style: solid; ; box-shadow: 2px -2px 2px">
+
+    <p style="font-size: 50px; margin-left:350px; margin-top: 20px; text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4)";>Method Options</p>
+    <div style="margin-left: 250px; margin-top:-10px; margin-right: 100px; font-size: 35px">
+        {{form_p}}
+    </div>
+<form method="post" lang="en" enctype="multipart/form-data" style="color:black; margin-left: 300px; margin-top: 100px; margin-right:360px; border-radius: 20px; border-style: solid; border-color: black">
+    {% csrf_token %}
+
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+</div>
+
+
+</body>
+
