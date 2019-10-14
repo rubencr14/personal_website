@@ -5,7 +5,7 @@
 			{% block content %}
 	<h1 style="margin: 1%; margin-left:4%"> “Is artificial intelligence less than our intelligence?” </h1>
         <h2 style="margin: .5%; margin-left:3%">Rubén Cañadas Rodríguez</h2>
-        <div style="font-size:50px; font-weight: bold; text-align: center; margin: 30px; margin-top: 50px; margin-bottom: 50px; text-shadow: 1px 1px 1px #919191,
+        <div style="font-size:5vw; font-weight: bold; text-align: center; margin: 3vw; text-shadow: 1px 1px 1px #919191,
         1px 8px 1px #919191,
         1px 8px 1px #919191,
         1px 4px 1px #919191,
@@ -24,51 +24,53 @@
             function NotImplemented()
                 {alert("Tutorial under construction \nTutorial release: 15-10-2019" )};
         </script>
-        <div  class="vae" style="overflow: auto; display:inline-block; background: white; background-image: url('{% static 'images/autoencoder.png'%}'); background-size: 300px 100px; background-repeat: no-repeat; width: 300px; height: 300px; position: relative; margin: 20px; margin-left: 140px; border-radius: 50px; border-style: solid; background-position: 5px 180px; box-shadow: 2px -2px 2px;">
-                <p href="#" style="text-decoration: none; color:black; margin: -10px; margin-bottom: -5px; margin-left: 80px; font-weight: bold; font-size:15px; margin-top:10px">Variational Autoencoder</p><br>
-                <p style="font-size: 15px; margin: 10px; margin-top: 0px">This tutorial explains a very particular generative method called variational autoencoder. It uses a encoder-decoder architecture in order to find a continous representation of the distribution so as to create de novo properties</p>
-                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/variational_autoencoder_tensorflow.ipynb"style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px; ">Code</a>
+        <div  class="vae" style="overflow: auto; display:inline-block; background: white; background-image: url('{% static 'images/autoencoder.png'%}'); background-size: 18vw 8vw; background-repeat: no-repeat; width: 25vw; height: 25vw; position: relative; margin: 1vw; margin-left:10vw; border-radius: 5vw; border-style: solid; background-position: 3vw 15.7vw; box-shadow: 2px -2px 2px;">
+                <p href="#" style="text-decoration: none; color:black; margin: 0.5vw; margin-left: 5vw; font-weight: bold; font-size:1.4vw; margin-top: 0.8vw">Variational Autoencoder</p><br>
+                <p style="font-size: 1.4vw; margin:0.7vw; margin-top:-0.7vw">This tutorial explains a very particular generative method called variational autoencoder. It uses a encoder-decoder architecture in order to find a continous representation of the distribution so as to create de novo properties</p>
+                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/variational_autoencoder_tensorflow.ipynb"style="text-decoration: none; color:black; margin-left: 10vw; font-weight: bold; font-size: 1.6vw; ">Code</a>
             </div>
-            <div class="pix" style="overflow: auto;display:inline-block; background: white; background-image: url('{% static 'images/pix2pix.jpg'%}'); background-size: 250px 110px; background-repeat: no-repeat; width: 300px; height: 300px; position: relative; margin: 20px; border-radius: 50px; border-style: solid; background-position: 20px 170px; box-shadow: 2px -2px 2px">
-                <p href="#" style="text-decoration: none; color:black;  margin: -10px; margin-bottom: -15px; margin-left: 120px;font-weight: bold; font-size:15px; margin-top:10px">Pix2Pix</p><br>
-                <p style="font-size: 15px; margin: 10px;">
+            <div class="pix" style="overflow: auto;display:inline-block; background: white; background-image: url('{% static 'images/pix2pix.jpg'%}'); background-size: 18vw 8vw; background-repeat: no-repeat; width: 25vw; height: 25vw; position: relative; margin: 1vw; border-radius: 5vw; border-style: solid; background-position: 3vw 15.7vw; box-shadow: 2px -2px 2px">
+                <p href="#" style="text-decoration: none; color:black;  margin: 0.5vw; margin-left: 10vw; font-weight: bold; font-size:1.4vw; margin-top:0.8vw">Pix2Pix</p><br>
+                <p style="font-size: 1.4vw; margin: 0.7vw; margin-top:-0.7vw;">
                     This tutorial explains a particular case of conditional adversarial networks in which image-to-image
                     translation problems are solved through a particular mapping from an input image to an output image
                     </p>
                 
-                <a onclick='NotImplemented()' target="_blank" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" style="text-decoration: none;  margin-left: 120px; color:black; font-weight: bold; font-size: 20px;">Code</a>
+                <a onclick='NotImplemented()' target="_blank" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" style="text-decoration: none;  margin-left: 10vw; color:black; font-weight: bold; font-size: 1.6vw;">Code</a>
             </div>
-            <div class="gan" style="overflow: auto;display:inline-block; background: white; background-image: url('{% static 'images/gan.jpeg'%}'); background-size: 250px 110px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 20px; border-radius: 50px; border-style: solid; background-position: 20px 170px; box-shadow: 2px -2px 2px;">
-                <p href="#" style="text-decoration: none; color:black; margin: -10px; margin-bottom: -15px; margin-left: 120px; font-weight: bold; font-size:15px; margin-top:10px">GAN</p><br>
-                <p style="font-size: 15px; margin: 10px;">This tutorial explains a famous generative model architecture named
+            <div class="gan" style="overflow: auto;display:inline-block; background:white; background-image: url('{% static 'images/gan.jpeg'%}'); background-size: 18vw 8vw; background-repeat: no-repeat; position: relative; width: 25vw; height: 25vw; margin: 1vw; border-radius: 5vw; border-style: solid; background-position: 3vw 15.7vw; box-shadow: 2px -2px 2px;">
+                <p href="#" style="text-decoration: none; color:black; margin: 0.5vw;  margin-left: 10vw; font-weight: bold; font-size:1.4vw; margin-top:0.8vw">GAN</p><br>
+                <p style="font-size: 1.4vw; margin: 0.7vw; margin-top:-0.7vw;">This tutorial explains a famous generative model architecture named
                 generative adversarial networks in which two artificial intelligences fight in order to obtain
                 a reliable generative model</p>
-                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/gan.ipynb?flush_cache=true"style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/gan.ipynb?flush_cache=true"style="text-decoration: none; color:black; margin-left: 10vw; font-weight: bold; font-size: 1.6vw">Code</a>
             </div>
-            <div class="lstm" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/lstm.jpg'%}'); background-size: 250px 110px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 40px; border-radius: 50px; border-style: solid; background-position: 20px 170px; margin-left:135px; margin-top:0px; box-shadow: 2px -2px 2px;">
-                <p href="" style="text-decoration: none; color:black; margin: 0px; margin-bottom: -15px; margin-left: 140px; font-weight: bold; font-size:15px; margin-top:10px">LSTM</p><br>
-                <p style="font-size: 15px; margin: 10px;">
+            <div class="lstm" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/lstm.jpg'%}'); background-size: 18vw 8vw; background-repeat: no-repeat; position: relative; width: 25vw; height: 25vw; margin: 1vw; border-radius: 5vw; border-style: solid; background-position: 3vw 15.7vw; margin-left:10vw; box-shadow: 2px -2px 2px;">
+                <p href="" style="text-decoration: none; color:black; margin: 0.5vw; margin-left: 10vw; font-weight: bold; font-size:1.4vw; margin-top:0.8vw">LSTM</p><br>
+                <p style="font-size: 1.4vw; margin: 0.7vw; margin-top:-0.7vw;">
                 This tutorial explains the basics of LSTMs, a particular type of recurrent neural networks designed to
                 work with long-term dependencies problems, for which recurrent neural networks fail. An example of how to use it
                 with text generation problems is given.
                 </p>
-                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/LSTM_quote.ipynb"style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://nbviewer.jupyter.org/github/rubencr14/ML_models/blob/master/ML_tutorials_nbviewer/LSTM_quote.ipynb"style="text-decoration: none; color:black; margin-left: 10vw; font-weight: bold; font-size: 1.6vw">Code</a>
             </div>
-            <div class="auto" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/auto.png'%}'); background-size: 250px 110px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 40px; border-radius: 50px; border-style: solid; background-position: 30px 170px; margin-left:10px; margin-top:0px; box-shadow: 2px -2px 2px;">
-                <p href="#" style="text-decoration: none; color:black; margin: 0px; margin-bottom: -15px; margin-left: 140px; font-weight: bold; font-size:15px; margin-top:10px; margin-left: 80px">Vanilla Autoencoder</p><br>
-                <p style="font-size: 15px; margin: 10px;">This generative unsupervised method uses a encoder architecture
+
+            <div class="auto" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/auto.png'%}'); background-size: 18vw 8vw; background-repeat: no-repeat; position: relative; width: 25vw; height: 25vw; margin: 1vw; border-radius: 5vw; border-style: solid; background-position: 3vw 15.7vw;  box-shadow: 2px -2px 2px;">
+                <p href="#" style="text-decoration: none; color:black; margin: 0.5vw; margin-left: 10vw; font-weight: bold; font-size:1.4vw; margin-top:0.8vw; margin-left:6vw">Vanilla Autoencoder</p><br>
+                <p style="font-size: 1.4vw; margin: 0.7vw; margin-top:-0.7vw">This generative unsupervised method uses a encoder architecture
                     in order to give a representation of the incoming object but in a lower dimensional space. This way it allows
                     to compress information. Then a decoder is used so as to reconstruct the object from the low dimensional representation.
                 </p>
-                <a  onclick='NotImplemented()'  onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" target="_blank" style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+                <a  onclick='NotImplemented()'  onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" target="_blank" style="text-decoration: none; color:black; margin-left: 10vw; font-weight: bold; font-size: 1.6vw">Code</a>
             </div>
-            <div class="style" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/style_gan.jpg'%}'); background-size: 250px 110px; background-repeat: no-repeat; position: relative; width: 300px; height: 300px; margin: 40px; border-radius: 50px; border-style: solid; background-position: 20px 170px; margin-left:10px; margin-top:0px; box-shadow: 2px -2px 2px;">
-                <p href="#" style="text-decoration: none; color:black; margin: 0px; margin-bottom: -15px;  font-weight: bold; font-size:15px; margin-top:10px; margin-left: 115px; ">Style GAN</p><br>
-                <p style="font-size: 15px; margin: 10px;">
+            
+            <div class="style" style="overflow: auto;display:inline-block;background: white; background-image: url('{% static 'images/style_gan.jpg'%}'); background-size: 18vw 8vw; background-repeat: no-repeat; position: relative; width: 25vw; height: 25vw; margin: 1vw; border-radius: 5vw; border-style: solid; background-position: 3vw 15.7vw;box-shadow: 2px -2px 2px;">
+                <p href="#" style="text-decoration: none; color:black; margin: 0.5vw; font-weight: bold; font-size:1.4vw; margin-top:0.8vw; margin-left: 8vw; ">Style GAN</p><br>
+                <p style="font-size: 1.4vw; margin: 0.7vw; margin-top:-0.7vw">
                         Style Transfer Generative Adversarial Networks take two images and apply the style from one image to the other image using two datasets of two styles 
                         with different images in each dataset. 
                 </p>
-                <a onclick='NotImplemented()'  onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" target="_blank" style="text-decoration: none; color:black; margin-left: 120px; font-weight: bold; font-size: 20px">Code</a>
+                <a onclick='NotImplemented()'  onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" target="_blank" style="text-decoration: none; color:black; margin-left: 10vw; font-weight: bold; font-size: 1.6vw">Code</a>
             </div>
 
 </div>
