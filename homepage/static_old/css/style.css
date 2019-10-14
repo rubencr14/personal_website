@@ -31,10 +31,12 @@ header{
 }
 
 .navegacion{
-
-	width: 1000px;
-	height: 250px;
-	margin: 30px auto;
+	/*width: 1000px*/
+	/*height: 250px*/
+	/*margin:30px*/
+	width: 100vw;
+	height: 20vw;
+	margin: 3vw;
 	text-align: center;
 
 
@@ -67,7 +69,8 @@ header{
 .menu > li > a{
 
 	display: block;
-	padding: 15px 20px;
+	/*padding: 15px 20px;*/
+	padding: 1.2vw 1.5vw;
 	font-family: 'Open sans';
 	text-decoration: none;
 	color: white;
@@ -132,7 +135,7 @@ header{
 }
 
 .sidebar{
-    top: 0px;
+    top: 100vw;
     position: fixed;
     padding: 0px 0px;
 
@@ -140,7 +143,7 @@ header{
 
 .sidebar li{
     position: relative;
-    padding: 0px 0px;
+    padding: 0vw 0vw;
     color:white;
 
 }
@@ -165,16 +168,7 @@ h1{
 
 }
 
-.content p {
-    margin-top: 50px;
-    margin-left: 5em;
-    margin-right: 5em;
-    font-size: 30px;
-	text-align: justify;
-    z-index: 1;
 
-
-}
 
 
 h2{
@@ -186,16 +180,7 @@ h2{
 
 }
 
-.lema p{
 
-    left: 350px;
-    top: 580px;
-    font-size: 60px;
-    color: green;
-    align: center;
-    position: absolute;
-
-}
 
 
 .contact_text{
