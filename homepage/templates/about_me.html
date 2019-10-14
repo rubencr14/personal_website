@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 	<div class="content">
 			{% block content %}
-	<h1> “Is artificial intelligence less than our intelligence?” </h1>
-        <h2>Rubén Cañadas Rodríguez</h2>
-        <div class="my" style="display:inline-block; background: white; background-image: url('{% static 'images/myself.png'%}'); background-size: 120px 100px; background-repeat: no-repeat; width: 700px; height: 530px; margin-left:50px;border-radius: 20px; border-style: solid; background-position: 300px 380px; box-shadow: 2px -2px 2px">
-                <p style="font-size:40px; color:black; font-weight: bold; margin: 30px; margin-left:250px">Myself</p>
-                <p style="margin: 20px; font-size:20px;line-height:1.5"> I am a very curious and highly motivated person with special interest in science. I am 
+	<!--<h1> “Is artificial intelligence less than our intelligence?” </h1>
+        <h2>Rubén Cañadas Rodríguez</h2>-->
+        <div class="my" style="display:inline-block; background: white; background-image: url('{% static 'images/myself.png'%}'); margin: 5vw; background-size: 10vw 8vw; background-repeat: no-repeat; width: 50vw; height: 43vw; margin-left:5vw;border-radius: 5vw; border-style: solid; background-position: 20vw 32vw; box-shadow: 2px -2px 2px">
+                <p style="font-size:4vw; color:black; font-weight: bold; margin: 1vw; margin-left:20vw">Myself</p>
+                <p style="margin: 1vw; font-size:1.6vw;line-height:1.5; text-align: justify"> I am a very curious and highly motivated person with special interest in science. I am 
                     always learning new things overall about math, physics and computer science. Apart from science I also love
                     travelling around the world. I have been in several countries such as Thailand, India, Nepal or Costa Rica as a backpacker
                     I find it amazing to discover new cultures, their gastronomy and customs. It is very inspiring when you are up in the Himalayas
@@ -15,10 +15,10 @@
                     relaxing and inspiring. When I come back I always feel full of energy to start new projects. 
                 
             </p></div>
-            <div class="stud" style="display:inline-block; background: white; background-image: url('{% static 'images/study.svg'%}'); background-size: 140px 120px; background-repeat: no-repeat; width: 700px; height: 400px; margin-left:500px; margin-top: 70px; border-radius: 20px; border-style: solid; background-position: 300px 250px; box-shadow: 2px -2px 2px">
-                    <p style="font-size:40px; color:black; font-weight: bold; margin: 30px; margin-left:250px">Studies</p>
+            <div class="stud" style="display:inline-block; background: white; background-image: url('{% static 'images/study.svg'%}'); background-size: 10vw 8vw; background-repeat: no-repeat; width: 50vw; height: 30vw; margin-left:40vw; margin-top: 0vw; border-radius: 5vw; border-style: solid; background-position: 20vw 20vw; box-shadow: 2px -2px 2px">
+                    <p style="font-size:4vw; color:black; font-weight: bold; margin: 1vw; margin-left:20vw">Studies</p>
                     <!--<p style="margin: 20px; font-size:20px">-->
-                    <ul style="margin: 30px; font-size:20px;line-height:1.5">
+                    <ul style="margin: 2.5vw; font-size:1.6vw;line-height:1.5">
                         <li>Bachelor of Science - BS, <strong> <a target="_blank" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" href="http://www.ub.edu/biologia/guia_grau_bioquimica/assignatures.html" style="color:black; text-decoration: none">Biochemistry</a></strong> (2013-2017)</li>
                         <li>Master of Science - MS, <strong> <a target="_blank" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" href="https://tccm.qui.uam.es/?page_id=1419" style="color:black; text-decoration: none">Theoretical chemistry and computational modelling</a></strong>  (2017-2019)</li>
                         <li>Bachelor of Science - BS, <strong> 
@@ -26,10 +26,11 @@
 
                     </ul>
                 </div>
-                <div class="proj" style="display:inline-block; background: white; background-image: url('{% static 'images/project.png'%}'); background-size: 120px 100px;background-repeat: no-repeat; width: 700px; height: 900px; margin-left:50px; margin-top: 80px; border-radius: 20px; border-style: solid; background-position: 300px 750px; box-shadow: 2px -2px 2px">
-                        <p style="font-size:40px; color:black; font-weight: bold; margin: 30px; margin-left:250px">Projects</p>
-                        <p style="margin: 20px; font-size:20px; "> 
-                            <ul style="margin: 30px; font-size:20px;line-height:1.5; text-align: justify">
+
+                <div class="proj" style="display:inline-block; background: white; background-image: url('{% static 'images/project.png'%}'); background-size: 10vw 8vw;background-repeat: no-repeat; width: 50vw; height: 70vw; margin-left:5vw; margin-top: 3vw; border-radius: 5vw; border-style: solid; background-position: 20vw 60vw; box-shadow: 2px -2px 2px">
+                        <p style="font-size:4vw; color:black; font-weight: bold; margin: 1vw; margin-left:20vw">Projects</p>
+                        <p style="margin: 2.5vw; font-size:1.6vw; "> 
+                            <ul style="margin: 2.5vw; font-size:1.6vw;line-height:1.5; text-align: justify">
                                 <li><strong>A machine learning-based scoring function for drug design:</strong> The aim of this project was to create
                                 a machine learning model for finding novel drugs for skin-related decesases in collaboration with the pharma.
                                  Methods: Neural networks, support vector machines, random forests, gradient boosting and topological data analysis.
@@ -49,9 +50,9 @@
 
                             </ul>
                     </p></div>
-                    <div class="pub" style="display:inline-block; background: white; background-image: url('{% static 'images/paper.png'%}'); background-size: 120px 100px; background-repeat: no-repeat; width: 700px; height: 350px; margin-left:500px; margin-top: 90px; border-radius: 20px; margin-bottom: 40px; border-style: solid; background-position: 300px 200px; box-shadow: 2px -2px 2px">
-                        <p style="font-size:40px; color:black; font-weight: bold; margin: 30px; margin-left:250px">Publications</p>
-                        <p style="margin: 20px; font-size:20px"> 
+                    <div class="pub" style="display:inline-block; background: white; background-image: url('{% static 'images/paper.png'%}'); background-size: 12vw 9vw; background-repeat: no-repeat; width: 700px; height: 30vw; margin-left:40vw; margin-top:1vw; border-radius: 5vw; margin-bottom: 1vw; border-style: solid; background-position: 20vw 15vw; box-shadow: 2px -2px 2px">
+                        <p style="font-size:4vw; color:black; font-weight: bold; margin: 1vw; margin-left:20vw">Publications</p>
+                        <p style="margin: 2.5vw; font-size:1.6vw"> 
                             <ul style="margin: 30px; font-size:20px;line-height:1.5">
                                 <li><a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';" target="_blank" href="https://www.sciencedirect.com/science/article/pii/S014181301935319X" style="color:black; text-decoration: none"><strong>Structural and biochemical insights into an engineered high-redox potential laccase overproduced in Aspergillus</strong></a></li>
 
