@@ -15,8 +15,8 @@ header{
 }
 
 .navegacion{
-	width: 1000px;
-	margin: 30px auto;
+	width: 100%;
+	margin: 30% auto;
 	background: #fff;
 }
 
@@ -31,7 +31,7 @@ header{
 
 .menu > li > a{
 	display: block;
-	padding: 15px 20px;
+	padding: 15% 20%;
 	color: #353535;
 	font-family: 'Open sans';
 	text-decoration: none;

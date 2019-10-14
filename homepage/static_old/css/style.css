@@ -16,7 +16,8 @@ body{
   /*background-image: url("{% static 'images/ai_logo.gif' %}")
  /*background-size: 33% 90%;*/
  /* background-size: 3000px, 900px; */ /*All screen with the gif*/
- background-size: 400px 300px;
+ /* background-size: 400px 300px */
+ background-size:45vw 23vw;
 	background-repeat: repeat-x;
   /*background-attachment: fixed;*/
 
