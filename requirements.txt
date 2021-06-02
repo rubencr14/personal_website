@@ -53,5 +53,5 @@ Theano==1.0.3
 tornado==5.1.1
 tqdm==4.32.1
 traceback2==1.4.0
-urllib3==1.24.1
+urllib3==1.26.5
 whitenoise==4.1.4
